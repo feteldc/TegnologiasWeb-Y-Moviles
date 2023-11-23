@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calculadora de IMC</h1>
+    <form id ="calculadoraDEiMC">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <br><br>
+
+        <label for="Peso">Peso(kg)</label>
+        <input type="text" id="Peso" name="Peso" required>
+        <br><br>
+
+        <label for="Altura">Altura(M)</label>
+        <input type="text" id="Altura" name="Altura" required>
+        <br><br>
+
+        
+        <label for="Edad">Edad</label>
+        <input type="text" id="Edad" name="Edad" required>
+        <br><br>
+
+        <label for ="Genero">Genero</label>
+        <select  id="Genero" > 
+            <option>masculino</option>
+            <option>femenino</option>
+        </select>
+        <br><br>
+        <label for="ActividadFisica">Nivel de Actividad Física:</label>
+        <select id="ActividadFisica" name="ActividadFisica">
+            <option value="sedentario">Sedentario</option>
+            <option value="moderado">Moderado</option>
+            <option value="activo">Activo</option>
+        </select>
+
+
+        <button type="button" onclick="imc()">calcular</button>
+
+    ></form>
+    <p id="resultado"></p>
+    <script src="../javascript/reto_4.js">
+
+    </script>
+</body>
+</html>
